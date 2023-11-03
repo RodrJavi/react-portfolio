@@ -1,8 +1,12 @@
 import Project from "../components/Project";
+import projectList from "../utils/projectList";
 export default function Portfolio() {
   return (
     <div>
-      <Project />
+      {projectList.map((project) => (
+        <Project {...project} key={project.title} />
+      ))}
+      {console.log(projectList)}
     </div>
   );
 }

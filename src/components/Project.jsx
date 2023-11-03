@@ -3,7 +3,7 @@ import Button from "./Button";
 const Project = ({ pic, title, body, source, site }) => {
   return (
     <div className="card">
-      <img src="" alt="" />
+      <img src={pic} alt={title} />
       <div className="card-body">
         <div>
           <h3>{title}</h3>
