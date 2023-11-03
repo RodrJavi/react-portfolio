@@ -1,8 +1,10 @@
 export default function Resume() {
   return (
-    <div>
+    <div className="page-background">
       <h2>Resume</h2>
-      <span>Download my resume here!</span>
+      <span>
+        Download my resume <a href="">here!</a>
+      </span>
 
       <h3>My frontend skills</h3>
       <ul>

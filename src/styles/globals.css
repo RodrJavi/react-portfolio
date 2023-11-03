@@ -6,6 +6,10 @@ body {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: rgb(199, 199, 199);
+}
+
 :root {
   --main-red: #881515;
   --main-red-transparent: #881515f3;
@@ -17,15 +21,22 @@ a {
 }
 
 ul {
+  list-style-type: circle;
+}
+
+header ul, footer ul {
   list-style-type: none;
-}
-
-header ul {
   display: flex;
 }
 
-footer ul {
+.page-background {
+  background-color: white;
+}
+
+.contact-page {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .button {
@@ -66,7 +77,41 @@ footer ul {
 }
 
 .portfolio-title {
-  text-align: center;
+  margin-bottom: 0px;
+}
+
+.form-object {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 13px;
+  max-width: 300px;
+  height: 350px;
+}
+
+.form-object button {
+  border: none;
+  max-width: 300px;
+  height: 35px;
+  font-size: 15px;
+}
+
+.form-email {
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  height: 40px;
+  font-size: 20px;
+  text-indent: 10px;
+  font-family: sans-serif;
+}
+
+.form-body {
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  height: 150px;
+  font-size: 20px;
+  text-indent: 10px;
+  font-family: sans-serif;
 }
 
 @media screen and (max-width: 900px) {
@@ -76,6 +121,10 @@ footer ul {
   }
 
   h1 {
+    text-align: center;
+  }
+
+  span {
     text-align: center;
   }
 
@@ -102,7 +151,7 @@ footer ul {
   }
 
   .about-me-body {
-    margin: 20px 75px;
+    padding: 20px 75px;
   }
 
   .project-list-container {
