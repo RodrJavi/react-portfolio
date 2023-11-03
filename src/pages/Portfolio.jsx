@@ -6,7 +6,6 @@ export default function Portfolio() {
       {projectList.map((project) => (
         <Project {...project} key={project.title} />
       ))}
-      {console.log(projectList)}
     </div>
   );
 }
