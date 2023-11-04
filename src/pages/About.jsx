@@ -4,7 +4,7 @@ export default function About() {
       <h2>About Me</h2>
 
       <img
-        src="../src/assets/images/about_me_new.jpg"
+        src="../images/about_me_new.jpg"
         alt="Picture of Javier Rodriguez"
         className="about-me-image"
       />
