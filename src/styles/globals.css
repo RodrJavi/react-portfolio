@@ -7,7 +7,7 @@ body {
 }
 
 body {
-  background-color: rgb(199, 199, 199);
+  background-color: rgb(136, 136, 136);
 }
 
 :root {
@@ -114,6 +114,21 @@ header ul, footer ul {
   font-family: sans-serif;
 }
 
+.nav-link {
+  color: white;
+  text-shadow: 2px 2px var(--main-red);
+  font-weight: bold;
+}
+
+.nav-link-active {
+  color: tomato;
+  font-weight: bold;
+}
+
+.resume-link {
+  color: var(--main-red);
+  text-decoration: underline;
+}
 @media screen and (max-width: 900px) {
   header {
     display: flex;
@@ -128,9 +143,15 @@ header ul, footer ul {
     text-align: center;
   }
 
+  header {
+    color: white;
+    text-shadow: 2px 2px var(--main-red);
+  }
+
   header ul {
+    display: flex;
     box-sizing: border-box;
-    padding: 10px 50px;
+    padding: 10px;
     margin: 20px;
     justify-content: space-between;
   }
@@ -152,6 +173,22 @@ header ul, footer ul {
 
   .about-me-body {
     padding: 20px 75px;
+  }
+
+  .about-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .about-me-image {
+    width: 75%;
+  }
+
+  .media-icon {
+    width: 100%;
+    height: 50px;
   }
 
   .project-list-container {

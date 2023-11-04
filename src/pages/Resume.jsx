@@ -3,7 +3,13 @@ export default function Resume() {
     <div className="page-background">
       <h2>Resume</h2>
       <span>
-        Download my resume <a href="">here!</a>
+        Download my resume{" "}
+        <a
+          href="../src/assets/documents/Javier-Rodriguez-resume.pdf"
+          download={"Javier-Rodriguez-resume.pdf"}
+          className="resume-link">
+          here!
+        </a>
       </span>
 
       <h3>My frontend skills</h3>

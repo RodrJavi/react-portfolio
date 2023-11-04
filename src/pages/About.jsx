@@ -1,7 +1,13 @@
 export default function About() {
   return (
-    <div className="page-background">
+    <div className="page-background about-page">
       <h2>About Me</h2>
+
+      <img
+        src="../src/assets/images/about_me_new.jpg"
+        alt="Picture of Javier Rodriguez"
+        className="about-me-image"
+      />
       <p>
         I have always had an interest in anything computer science related and
         knew I wanted to have a career in it. I was exposed to web development

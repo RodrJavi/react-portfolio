@@ -4,6 +4,7 @@ function ContactForm() {
   if (state.succeeded) {
     return <p>Thanks for reaching out!</p>;
   }
+
   return (
     <form className="form-object" onSubmit={handleSubmit}>
       <input
