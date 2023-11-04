@@ -7,6 +7,7 @@ function ContactForm() {
 
   return (
     <form className="form-object" onSubmit={handleSubmit}>
+      <input className="form-email" type="text" placeholder="Your name" />
       <input
         className="form-email"
         placeholder="Your Email"
